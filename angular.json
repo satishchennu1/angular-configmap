@@ -44,6 +44,22 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "test": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ]
+            },
+            "origin": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.origin.ts"
+                }
+              ]
             }
           }
         },
@@ -55,6 +71,12 @@
           "configurations": {
             "production": {
               "browserTarget": "s2i-angular-configmap:build:production"
+            },
+            "test": {
+              "browserTarget": "s2i-angular-configmap:build:test"
+            },
+            "origin": {
+              "browserTarget": "s2i-angular-configmap:build:origin"
             }
           }
         },

@@ -1,0 +1,18 @@
+kind: BuildConfig
+apiVersion: v1
+metadata:
+  name: angular-configmap
+spec:
+  source:
+    git: 
+      uri: https://github.com/adambkaplan/angular-configmap.git
+      ref: master
+    configMaps:
+      - configMap:
+          name: angular-env
+        destinationDir: src/environments
+  strategy:
+    dockerStrategy: 
+      env:
+        - name: NG_CONFIG
+          value: origin

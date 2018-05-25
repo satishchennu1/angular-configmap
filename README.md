@@ -1,4 +1,6 @@
-# S2iAngularConfigmap
+# AngularConfigmap
+
+A crude demonstration of how to use ConfigMap sources in an OpenShift build.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
