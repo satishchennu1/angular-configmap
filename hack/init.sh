@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ng serve --host 0.0.0.0 --configuration ${NG_CONFIG}
+config=${NG_CONFIG:-production}
+ng serve --host 0.0.0.0 --configuration ${config}

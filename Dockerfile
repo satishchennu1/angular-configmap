@@ -1,6 +1,5 @@
 FROM node:8.11
 ENV NG_HOME=/usr/ng/app \
-    NG_CONFIG=production \
     PATH=/usr/ng/app/node_modules/.bin:$PATH 
 
 RUN npm install -g @angular/cli@^6.0.3 && \

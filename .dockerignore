@@ -42,5 +42,6 @@ Thumbs.db
 .git/
 .svn/
 
-# Dockerfiles
+# Non-image
 Dockerfile
+/openshift

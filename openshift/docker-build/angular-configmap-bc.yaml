@@ -16,3 +16,7 @@ spec:
       env:
         - name: NG_CONFIG
           value: origin
+  output:
+    to:
+      kind: ImageStreamTag
+      name: "angular-configmap:latest"
