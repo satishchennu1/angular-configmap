@@ -7,5 +7,5 @@ data:
   environment.origin.ts: |
     export const environment = {
       production: false,
-      namespace: demo
+      namespace: "demo"
     };
