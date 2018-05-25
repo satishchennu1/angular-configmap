@@ -10,12 +10,14 @@ spec:
     configMaps:
       - configMap:
           name: angular-env
-        destinationDir: src/environments
+        destinationDir: config/environments
   strategy:
     dockerStrategy: 
       env:
         - name: NG_CONFIG
           value: origin
+        - name: BUILD_LOGLEVEL
+          value: "5"
   output:
     to:
       kind: ImageStreamTag
