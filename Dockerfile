@@ -10,7 +10,7 @@ WORKDIR $NG_HOME
 RUN npm install
 COPY . $NG_HOME
 ADD ./config/environments $NG_HOME/src/environments
-
+RUN ls -l $NG_HOME/src/environments
 RUN chown -R 1001:0 $NG_HOME
 
 USER 1001
