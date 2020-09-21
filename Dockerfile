@@ -9,7 +9,6 @@ COPY ./package.json ./package-lock.json $NG_HOME/
 WORKDIR $NG_HOME
 RUN npm install
 COPY . $NG_HOME
-ADD ./config/environments $NG_HOME/src/environments
 
 RUN chown -R 1001:0 $NG_HOME && \
     chmod -R 755 $NG_HOME
